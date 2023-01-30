@@ -1,0 +1,283 @@
+<!-- 
+    1- créer l'interface, les blocs, les boutons "radio"
+    2- stylier le tout
+    3- récupérer les données au clic
+    4- comparer les résultats
+    5- afficher des phrases en fonction des résultats
+    6- changer la couleur des blocs + animation en fonction des résultats
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Quizz</title>
+</head>
+<body>
+    <div class="firstpart">
+        <div class="quizz">
+            <p>Testez votre QI
+                <span>
+                QUIZZ CULTURE GENERALE
+                </span>
+                &mdash; Ne trichez pas &mdash;
+            </p>
+        </div>
+        <div class="choix_niveau">
+            <select id="niveau">
+                <option selected >Choisissez le niveau</option>
+                <option value="facile">Facile</option>
+                <option value="moyen">Moyen</option>
+                <option value="difficile">Difficile</option>
+            </select>
+
+            <select id="domaine">
+                <option selected >Selectionnez le domaine</option>
+                <option value="nature">Nature</option>
+                <option value="science">Science</option>
+                <option value="monde">Monde</option>
+                <option value="animaux">Animaux</option>
+                <option value="sport">Sport</option>
+            </select>
+        </div>
+        <div class="frame">
+            <button class="custom-btn btn" id="button"><span>Commencer</span><span>Jouer</span></button>
+        </div>
+    </div>
+
+    <!-- la partie des questions -->
+
+    
+                        <!--des questions de niveau facile de nature  -->
+
+    <div class="container-global-facile-nature">
+
+        <h1>Facile: Nature</h1>
+
+        <form action="" class="form-quizz">
+
+            <div class="question-block">
+                <h4>Avant qu'une tomate devienne rouge, de quelle couleur est-elle?</h4>
+                <div>
+                    <input type="radio" name="q1" id="vert" value="a" checked>
+                    <label for="vert">Vert</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="q1" id="blanc" value="b">
+                    <label for="blanc">Blanc</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="q1" id="brun" value="c">
+                    <label for="brun">Brun</label>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <h4>Quel est le pourcentage d'eau salé sur Terre?</h4>
+                <div>
+                    <input type="radio" name="q2" id="p50" value="a" checked>
+                    <label for="p50">50%</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="q2" id="p75" value="b">
+                    <label for="p75">75%</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="q2" id="p97" value="c">
+                    <label for="p97">97%</label>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <h4>Quel est le nom de l'action du soleil qui attire l'eau dans les nuages?</h4>
+                <div>
+                    <input type="radio" name="q3" id="photosynthese" value="a" checked>
+                    <label for="photosynthese">La photosynthèse</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="q3" id="ruisselement" value="b">
+                    <label for="ruisselement">Le ruisselement</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="q3" id="evaporation" value="c">
+                    <label for="evaporation">L'évaporation</label>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <h4>Quelle est la formule de la molécule d'eau?</h4>
+                <div>
+                    <input type="radio" name="q4" id="o2" value="a" checked>
+                    <label for="o2">O2</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="q4" id="h2o" value="b">
+                    <label for="h2o">H2O</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="q4" id="co2" value="c">
+                    <label for="co2">CO2</label>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <h4>Quel est le plus haut sommet du monde?</h4>
+                <div>
+                    <input type="radio" name="q5" id="everest" value="a" checked>
+                    <label for="everest">Everest</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="q5" id="m-fuji" value="b">
+                    <label for="m-fuji">Mont Fuji</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="q5" id="m-blanc" value="c">
+                    <label for="m-blanc">Mont Blanc</label>
+                </div>
+            </div>
+
+            <button type="submit">Validez vos choix</button>
+
+        </form>
+
+        <div class="resultats">
+            <h2>Cliquez sur valider pour voir les résultats</h2>
+            <p class="aide"></p>
+            <p class="note"></p>
+        </div>
+
+    </div>
+
+
+            <!-- des questions de niveau moyen de nature -->
+
+
+    <div class="container-global-moyen-nature">
+
+        <h1>Moyen: Nature</h1>
+
+        <form action="" class="form-quizz2">
+
+            <div class="question-block">
+                <h4>Au voisinage du sol, quel gaz compose en grande partie l'air ?</h4>
+                <div>
+                    <input type="radio" name="a1" id="diazote" value="a" checked>
+                    <label for="diazote">Diazote</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="a1" id="oxygene" value="b">
+                    <label for="oxygene">Oxygène</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="a1" id="carbone" value="c">
+                    <label for="carbone">Carbone</label>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <h4>Quand fête-t-on les Roses ?</h4>
+                <div>
+                    <input type="radio" name="a2" id="avril" value="a" checked>
+                    <label for="avril">Le 15 avril</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="a2" id="septembre" value="b">
+                    <label for="septembre">Le 6 septembre</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="a2" id="aout" value="c">
+                    <label for="aout">Le 23 Août</label>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <h4>De quoi le carbonate de calcium est-il- un des composés majeurs ?</h4>
+                <div>
+                    <input type="radio" name="a3" id="fer" value="a" checked>
+                    <label for="fer">Du fer</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="a3" id="calcaire" value="b">
+                    <label for="calcaire">Du calcaire</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="a3" id="bronze" value="c">
+                    <label for="bronze">Du bronze</label>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <h4>Où se trouve le Mon Blanc?</h4>
+                <div>
+                    <input type="radio" name="a4" id="alpes" value="a" checked>
+                    <label for="alpes">Les alpes</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="a4" id="lune" value="b">
+                    <label for="lune">La lune</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="a4" id="allemagne" value="c">
+                    <label for="allemagne">En allemagne</label>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <h4>Dans quel pays trouve-t-on la ville de Lierre?</h4>
+                <div>
+                    <input type="radio" name="a5" id="suisse" value="a" checked>
+                    <label for="suisse">Suisse</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="a5" id="france" value="b">
+                    <label for="france">France</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="a5" id="belgique" value="c">
+                    <label for="belgique">Belgique</label>
+                </div>
+            </div>
+
+            <button type="submit">Validez vos choix</button>
+
+        </form>
+
+        <div class="resultats">
+            <h2>Cliquez sur valider pour voir les résultats</h2>
+            <p class="aide"></p>
+            <p class="note"></p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>

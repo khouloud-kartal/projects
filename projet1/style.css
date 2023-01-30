@@ -1,0 +1,327 @@
+ body{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.firstpart{
+    display: block;
+    background-color: #14213d;
+    height: 100vh;
+}
+
+.quizz{
+ width: 100%;
+ height: 50%;
+ display: flex;
+ justify-content: center;
+}
+
+p{
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    display: inline-block;
+    border: 4px double rgba(255, 255, 255, .25);
+    border-width: 4px 0;
+    padding: 1.5em 0em;
+    width: 40em;
+    text-align: center;
+}
+p span {
+    font: 700 4em "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+   /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation:  aitf 80s linear infinite;
+   /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+   }
+    100% {
+        background-position: 100% 50%;
+   }
+}
+
+
+/* *********************************niveau***************************** */
+
+.choix_niveau{
+
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+select {
+   /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+   /* Personalize */
+    width: 20em;
+    height: 3em;
+    padding: 0 4em 0 1em;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center / 1.4em, linear-gradient(to left, rgba(255, 255, 255, 0.3) 3em, rgba(255, 255, 255, 0.2) 3em);
+    color: white;
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+   /* <option> colors */
+   /* Remove focus outline */
+   /* Remove IE arrow */
+}
+select option {
+    color: inherit;
+    background-color: #f77f00;
+}
+select:focus {
+    outline: none;
+}
+select::-ms-expand {
+    display: none;
+}
+
+/* ******************************button********************* */
+
+
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+button {
+    margin: 20px;
+}
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.btn{
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    border:none;
+    box-shadow: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+}
+.btn span {
+    background: #f77f00;
+    background: linear-gradient(0deg, #f77f00 0%, #f77f00 100%);
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 5px;
+    margin:0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.btn span:nth-child(1) {
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+.btn span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+.btn:hover span:nth-child(1) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+  .btn:hover span:nth-child(2) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+   color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+  
+
+
+
+
+
+/* la paries des questions */
+
+
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+
+h1{
+    font-weight: lighter;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 40px;
+}
+
+.container-global-facile-nature, .container-global-moyen-nature{
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: auto;
+    background-color: #fff;
+    display: none;
+}
+
+.question-block{
+    padding: 15px 25px 25px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.question-block h4{
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+.question-block label{
+    font-size: 20px;
+} 
+
+
+
+/* cibler directement tous les attributs type qui auront la veleur radio */
+.question-block input[type='radio']{
+    transform: scale(1.8);
+    margin: 10px;
+}
+
+.resulats{
+    padding: 25px;
+    margin: 10px 0px 70px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    
+}
+.resulats h2{
+    text-align: center;
+}
+
+.aide{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.note{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+form button{
+    border: none;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+    padding: 20px 40px;
+    /* cursor:pointer c'est pour montrer qu'on peut clicker dessus */
+    cursor: pointer;
+    font-size: 25px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+form button:hover{
+    background-color: lightblue;
+}
+
+.echec{
+    animation: echec 0.3s ease-in-out;
+}
+
+@keyframes echec{
+    0%{
+        transform: translateX(0px);
+    }
+    33%{
+        transform: translateX(5px);
+    }
+    66%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
