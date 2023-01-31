@@ -220,7 +220,7 @@ h1{
     font-size: 40px;
 }
 
-.container-global-facile-nature, .container-global-moyen-nature{
+.container-global{
     width: 60%;
     max-width: 800px;
     margin: 0 auto;
@@ -229,26 +229,26 @@ h1{
     display: none;
 }
 
-.question-block{
+.questions{
     padding: 15px 25px 25px;
     margin: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.question-block h4{
+.questions h4{
     padding: 10px 0;
     font-size: 22px;
 }
 
-.question-block label{
+.questions label{
     font-size: 20px;
 } 
 
 
 
 /* cibler directement tous les attributs type qui auront la veleur radio */
-.question-block input[type='radio']{
+.questions input[type='radio']{
     transform: scale(1.8);
     margin: 10px;
 }
