@@ -29,14 +29,14 @@
         </div>
         <div class="choix_niveau">
             <select id="niveau">
-                <option selected >Choisissez le niveau</option>
+                <option selected value="level">Choisissez le niveau</option>
                 <option value="facile">Facile</option>
                 <option value="moyen">Moyen</option>
                 <option value="difficile">Difficile</option>
             </select>
 
             <select id="domaine">
-                <option selected >Selectionnez le domaine</option>
+                <option selected value="subject">Selectionnez le domaine</option>
                 <option value="nature">Nature</option>
                 <option value="science">Science</option>
                 <option value="monde">Monde</option>
@@ -49,14 +49,18 @@
         </div>
     </div>
 
-    <!-- la partie des questions -->
+                                <!-- la partie des questions -->
 
     
                         <!--des questions de niveau facile de nature  -->
-    
+    <div class="azerty">
+                        
     <div class="container-global facile-nature">
 
-        <h1>Facile: Nature</h1>
+        <div class="header">
+            <button type="reset" class="retour">Retour</button>
+            <h1>Facile: Nature</h1>
+        </div>
 
         <form action="" class="form-quizz">
 
@@ -150,7 +154,7 @@
                 </div>
             </div>
 
-            <button type="submit">Validez vos choix</button>
+            <button type="submit" class="button_valider">Validez vos choix</button>
 
         </form>
 
@@ -166,7 +170,10 @@
 
     <div class="container-global moyen-nature">
 
-        <h1>Moyen: Nature</h1>
+        <div class="header">
+            <button type="reset" class="retour">Retour</button>
+            <h1>Moyen: Nature</h1>
+        </div>
 
         <form action="" class="form-quizz">
 
@@ -260,7 +267,7 @@
                 </div>
             </div>
 
-            <button type="submit">Validez vos choix</button>
+            <button type="submit" class="button_valider">Validez vos choix</button>
 
         </form>
 
@@ -276,7 +283,10 @@
 
     <div class="container-global difficile-nature">
 
-        <h1>Difficile: Nature</h1>
+        <div class="header">
+            <button type="reset" class="retour">Retour</button>
+            <h1>Difficile: Nature</h1>
+        </div>
 
         <form action="" class="form-quizz">
 
@@ -370,7 +380,7 @@
                 </div>
             </div>
 
-            <button type="submit">Validez vos choix</button>
+            <button type="submit" class="button_valider">Validez vos choix</button>
 
         </form>
 
@@ -385,7 +395,10 @@
 
     <div class="container-global facile-science">
 
-        <h1>Facile: Science</h1>
+        <div class="header">
+            <button type="reset" class="retour">Retour</button>
+            <h1>Facile: Science</h1>
+        </div>
 
         <form action="" class="form-quizz">
 
@@ -479,7 +492,7 @@
                 </div>
             </div>
 
-            <button type="submit">Validez vos choix</button>
+            <button type="submit" class="button_valider">Validez vos choix</button>
 
         </form>
 
@@ -490,13 +503,15 @@
     </div>
 
 
-
-
+    
                 <!--  Des question de niveau moyen science-->
 
     <div class="container-global moyen-science">
 
-        <h1>Moyen: Science</h1>
+        <div class="header">
+            <button type="reset" class="retour">Retour</button>
+            <h1>Moyen: Science</h1>
+        </div>
 
         <form action="" class="form-quizz">
 
@@ -590,115 +605,7 @@
                 </div>
             </div>
 
-            <button type="submit">Validez vos choix</button>
-
-        </form>
-
-        <div class="resultats">
-            
-        </div>
-
-    </div>
-
-                <!--  Des question de niveau moyen science-->
-
-    <div class="container-global moyen-science">
-
-        <h1>Moyen: Science</h1>
-
-        <form action="" class="form-quizz">
-
-            <div class="questions question-block4">
-                <h4>De nombreux produits sont en cuir, mais d'où vient ce cuir?</h4>
-                <div>
-                    <input type="radio" name= "q1" id="peau" value="a" checked>
-                    <label for="peau">La peau des animaux</label>
-                </div>
-
-                <div>
-                    <input type="radio" name= "q1" id="petrole" value="b">
-                    <label for="petrole">Le pétrole</label>
-                </div>
-
-                <div>
-                    <input type="radio" name= "q1" id="cauoutch" value="c">
-                    <label for="caoutch">L'écorce de caoutchoutier</label>
-                </div>
-            </div>
-
-            <div class="questions question-block4">
-                <h4>Combien de litre d'eau faut-il pour produire 1 tonne de papier?</h4>
-                <div>
-                    <input type="radio" name= "q2" id="400l" value="a" checked>
-                    <label for="400l">40 000 litres</label>
-                </div>
-
-                <div>
-                    <input type="radio" name= "q2" id="40l" value="b">
-                    <label for="40l">4 000 litres</label>
-                </div>
-
-                <div>
-                    <input type="radio" name= "q2" id="4l" value="c">
-                    <label for="4l">400 litres</label>
-                </div>
-            </div>
-
-            <div class="questions question-block4">
-                <h4>Dans notre corps, le sang est nettoyé des déchets avant de refluer vers le coeur. A quel niveau se passe ce phénomène?</h4>
-                <div>
-                    <input type="radio" name= "q3" id="pancreas" value="a" checked>
-                    <label for="pancreas">Le pancréas</label>
-                </div>
-
-                <div>
-                    <input type="radio" name= "q3" id="foie" value="b">
-                    <label for="foie">Le foie</label>
-                </div>
-
-                <div>
-                    <input type="radio" name= "q3" id="reins" value="c">
-                    <label for="reins">Les reins</label>
-                </div>
-            </div>
-
-            <div class="questions question-block4">
-                <h4>Combien de temps dort-on sur toute notre vie?</h4>
-                <div>
-                    <input type="radio" name= "q4" id="dixieme" value="a" checked>
-                    <label for="dixieme">1 dixième de notre vie</label>
-                </div>
-
-                <div>
-                    <input type="radio" name= "q4" id="cinquieme" value="b">
-                    <label for="cinquieme">1 cinquième de notre vie</label>
-                </div>
-
-                <div>
-                    <input type="radio" name= "q4" id="tiers" value="c">
-                    <label for="tiers">1 tiers de notre vie</label>
-                </div>
-            </div>
-
-            <div class="questions question-block4">
-                <h4>De quelle substance se compose notre corps en majeurs partie?</h4>
-                <div>
-                    <input type="radio" name= "q5" id="sang" value="a" checked>
-                    <label for="sang">Le sang</label>
-                </div>
-
-                <div>
-                    <input type="radio" name= "q5" id="eau" value="b">
-                    <label for="eau">L'eau</label>
-                </div>
-
-                <div>
-                    <input type="radio" name= "q5" id="graisse" value="c">
-                    <label for="graisse">La graisse</label>
-                </div>
-            </div>
-
-            <button type="submit">Validez vos choix</button>
+            <button type="submit" class="button_valider">Validez vos choix</button>
 
         </form>
 
@@ -712,7 +619,10 @@
 
     <div class="container-global difficile-science">
 
-        <h1>Difficile: Science</h1>
+        <div class="header">
+            <button type="reset" class="retour">Retour</button>
+            <h1>Difficile: Science</h1>
+        </div>
 
         <form action="" class="form-quizz">
 
@@ -806,7 +716,784 @@
                 </div>
             </div>
 
-            <button type="submit">Validez vos choix</button>
+            <button type="submit" class="button_valider">Validez vos choix</button>
+
+        </form>
+
+        <div class="resultats">
+            
+        </div>
+
+    </div>
+
+                    <!--  Des question de niveau facile monde-->
+
+    <div class="container-global facile-monde">
+
+        <div class="header">
+            <button type="reset" class="retour">Retour</button>
+            <h1>Facile: Monde</h1>
+        </div>
+
+        <form action="" class="form-quizz">
+
+            <div class="questions question-block6">
+                <h4>Quelle langue est parlées par le plus grand nombre de personnes au monde?</h4>
+                <div>
+                    <input type="radio" name= "q1" id="anglais" value="a" checked>
+                    <label for="anglais">L'anglais</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="chinois" value="b">
+                    <label for="chinois">Le chinois</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="arabe" value="c">
+                    <label for="arabe">L'arabe</label>
+                </div>
+            </div>
+
+            <div class="questions question-block6">
+                <h4>Comment s'appelle l'organisation qui aide les anfants dans le monde entier?</h4>
+                <div>
+                    <input type="radio" name= "q2" id="unicef" value="a" checked>
+                    <label for="unicef">UNICEF</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="unisco" value="b">
+                    <label for="unisco">UNISCO</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="uno" value="c">
+                    <label for="uno">UNO</label>
+                </div>
+            </div>
+
+            <div class="questions question-block6">
+                <h4>Les femmes indiennes se drapent le corps d'une pièce de tissu que l'on appelle?</h4>
+                <div>
+                    <input type="radio" name= "q3" id="sarong" value="a" checked>
+                    <label for="sarong">Un sarong</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="schako" value="b">
+                    <label for="schako">Un schako</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="sari" value="c">
+                    <label for="sari">Un sari</label>
+                </div>
+            </div>
+
+            <div class="questions question-block6">
+                <h4>Dans lequel des pays suivants ne peut-on pas payer en euros?</h4>
+                <div>
+                    <input type="radio" name= "q4" id="suisse" value="a" checked>
+                    <label for="suisse">La Suisse</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="autriche" value="b">
+                    <label for="autriche">L'Autriche</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="finlande" value="c">
+                    <label for="finlande">La Finlande</label>
+                </div>
+            </div>
+
+            <div class="questions question-block6">
+                <h4>Comment s'appelle le lieu de prière pour les musulmans?</h4>
+                <div>
+                    <input type="radio" name= "q5" id="synagoque" value="a" checked>
+                    <label for="synagoque">La synagoque</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="mosquee" value="b">
+                    <label for="mosquee">La mosquée</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="temple" value="c">
+                    <label for="temple">La temple</label>
+                </div>
+            </div>
+
+            <button type="submit" class="button_valider">Validez vos choix</button>
+
+        </form>
+
+        <div class="resultats">
+            
+        </div>
+
+    </div>
+
+                            <!--  Des question de niveau moyen monde-->
+
+    <div class="container-global moyen-monde">
+
+        <div class="header">
+            <button type="reset" class="retour">Retour</button>
+            <h1>Moyen: Monde</h1>
+        </div>
+
+        <form action="" class="form-quizz">
+
+            <div class="questions question-block7">
+                <h4>Qui était Neil Armstrong?</h4>
+                <div>
+                    <input type="radio" name= "q1" id="marchelune" value="a" checked>
+                    <label for="marchelune">Le premier homme à marcher sur la lune</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="joueur" value="b">
+                    <label for="joueur">Un joueur de saxophone</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="laureat" value="c">
+                    <label for="laureat">Un lauréat du prix Noble de la paix</label>
+                </div>
+            </div>
+
+            <div class="questions question-block7">
+                <h4>Dans quelle grande métropole passe le fleuve qui s'appelle la Seine?</h4>
+                <div>
+                    <input type="radio" name= "q2" id="newyork" value="a" checked>
+                    <label for="newyork">New-York</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="londres" value="b">
+                    <label for="londres">Londres</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="paris" value="c">
+                    <label for="paris">Paris</label>
+                </div>
+            </div>
+
+            <div class="questions question-block7">
+                <h4>A Venir, les voies d'eau qui parcourent la ville sont des: ?</h4>
+                <div>
+                    <input type="radio" name= "q3" id="canaux" value="a" checked>
+                    <label for="canaux">Canaux</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="fosses" value="b">
+                    <label for="fosses">Fossés</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="douves" value="c">
+                    <label for="douves">Douves</label>
+                </div>
+            </div>
+
+            <div class="questions question-block7">
+                <h4>Comment appelle-t-on le peuple qui voyage dans le désert?</h4>
+                <div>
+                    <input type="radio" name= "q4" id="vikings" value="a" checked>
+                    <label for="vikings">Les vikings</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="nomades" value="b">
+                    <label for="nomades">Les nomades</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="allies" value="c">
+                    <label for="allies">Les alliés</label>
+                </div>
+            </div>
+
+            <div class="questions question-block7">
+                <h4>Quel autre nom donne-t-on au pétrole?</h4>
+                <div>
+                    <input type="radio" name= "q5" id="diamant" value="a" checked>
+                    <label for="diamant">Le diamant noir</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="rubis" value="b">
+                    <label for="rubis">Le rubis noir</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="or" value="c">
+                    <label for="or">L'or noir</label>
+                </div>
+            </div>
+
+            <button type="submit" class="button_valider">Validez vos choix</button>
+
+        </form>
+
+        <div class="resultats">
+            
+        </div>
+
+    </div>
+
+                            <!--  Des question de niveau diffficile monde-->
+
+    <div class="container-global difficile-monde">
+
+        <div class="header">
+            <button type="reset" class="retour">Retour</button>
+            <h1>Difficile: Monde</h1>
+        </div>
+
+        <form action="" class="form-quizz">
+
+            <div class="questions question-block8">
+                <h4>L'Alhambra est un palais situé à Grenade en espagne. Ce nom vient de l'arabe, que signifie t-il?</h4>
+                <div>
+                    <input type="radio" name= "q1" id="fees" value="a" checked>
+                    <label for="fees">Le palais de contre fées</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="chteau" value="b">
+                    <label for="chateau">Le château rouge</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="citadelle" value="c">
+                    <label for="citadelle">La citadelle dorée</label>
+                </div>
+            </div>
+
+            <div class="questions question-block8">
+                <h4>En Ecosse, de nombreux curieux viennent visiter le Loch Ness car: ?</h4>
+                <div>
+                    <input type="radio" name= "q2" id="dracula" value="a" checked>
+                    <label for="dracula">Le compte Dracula aurait habité dans le château près du lac</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="fantomes" value="b">
+                    <label for="fantomes">Des fantômes hanteraient le château noir</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="monstre" value="c">
+                    <label for="monstre">Un monstre vivrait dans le lac</label>
+                </div>
+            </div>
+
+            <div class="questions question-block8">
+                <h4>La République d'Irlande se situe dans la partie sud de l'île d'irlande. Quelle est sa capitale?</h4>
+                <div>
+                    <input type="radio" name= "q3" id="dublin" value="a" checked>
+                    <label for="dublin">Dublin</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="belfast" value="b">
+                    <label for="belfast">Belfast</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="limerick" value="c">
+                    <label for="limerick">Limerick</label>
+                </div>
+            </div>
+
+            <div class="questions question-block8">
+                <h4>En Afrique, on trouve des chutes d'eau qui portent un nom féminin. Lequel?</h4>
+                <div>
+                    <input type="radio" name= "q4" id="diana" value="a" checked>
+                    <label for="diana">Diana</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="victoria" value="b">
+                    <label for="victoria">Victoria</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="alberta" value="c">
+                    <label for="alberta">Alberta</label>
+                </div>
+            </div>
+
+            <div class="questions question-block8">
+                <h4>Dans quel pays peut-on visiter l'encienne cité Inca de Machu Picchu?</h4>
+                <div>
+                    <input type="radio" name= "q5" id="bolivie" value="a" checked>
+                    <label for="bolivie">En Bolivie</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="argentine" value="b">
+                    <label for="argentine">En Argentine</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="peru" value="c">
+                    <label for="peru">En Péru</label>
+                </div>
+            </div>
+
+            <button type="submit" class="button_valider">Validez vos choix</button>
+
+        </form>
+
+        <div class="resultats">
+            
+        </div>
+
+    </div>
+
+                        <!--  Des question de niveau facile animaux-->
+
+    <div class="container-global facile-animaux">
+
+        <div class="header">
+            <button type="reset" class="retour">Retour</button>
+            <h1>Facile: Animaux</h1>
+        </div>
+
+        <form action="" class="form-quizz">
+
+            <div class="questions question-block9">
+                <h4>Quel oiseau est un symbole international de paix?</h4>
+                <div>
+                    <input type="radio" name= "q1" id="colombe" value="a" checked>
+                    <label for="colombe">La colombe</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="hirondelle" value="b">
+                    <label for="hirondelle">L'hirondelle</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="cigogne" value="c">
+                    <label for="cigogne">La cigigne</label>
+                </div>
+            </div>
+
+            <div class="questions question-block9">
+                <h4>L'araignée utilise sa toile pour: ?</h4>
+                <div>
+                    <input type="radio" name= "q2" id="reposer" value="a" checked>
+                    <label for="reposer">Se reposer</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="capturer" value="b">
+                    <label for="capturer">Capturer sa proie</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="deplacer" value="c">
+                    <label for="deplacer">Se déplacer</label>
+                </div>
+            </div>
+
+            <div class="questions question-block9">
+                <h4>L'étoile de mer possède en général 5 membres identiques qui sont des: ?</h4>
+                <div>
+                    <input type="radio" name= "q3" id="bras" value="a" checked>
+                    <label for="bras">Bras</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="queues" value="b">
+                    <label for="queues">Queues</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="pattes" value="c">
+                    <label for="pattes">Pattes</label>
+                </div>
+            </div>
+
+            <div class="questions question-block9">
+                <h4>Les lamas, que l'on peut répartir en 4 éspèces, vivent en Amérique du Sud. Ils font partie de quelle famille?</h4>
+                <div>
+                    <input type="radio" name= "q4" id="chamois" value="a" checked>
+                    <label for="chamois">Chamois</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="chameaux" value="b">
+                    <label for="chameaux">Chameaux</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="moutons" value="c">
+                    <label for="moutons">Moutons</label>
+                </div>
+            </div>
+
+            <div class="questions question-block9">
+                <h4>Combien d'yeux une araignée possède-t-elle?</h4>
+                <div>
+                    <input type="radio" name= "q5" id="d2" value="a" checked>
+                    <label for="d2">2</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="quatre4" value="b">
+                    <label for="quatre4">4</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="huit" value="c">
+                    <label for="huit">8</label>
+                </div>
+            </div>
+
+            <button type="submit" class="button_valider">Validez vos choix</button>
+
+        </form>
+
+        <div class="resultats">
+            
+        </div>
+
+    </div>
+
+                            <!--  Des question de niveau moyen animaux-->
+
+    <div class="container-global moyen-animaux">
+
+        <div class="header">
+            <button type="reset" class="retour">Retour</button>
+            <h1>Moyen: Animaux</h1>
+        </div>
+
+        <form action="" class="form-quizz">
+
+            <div class="questions question-block10">
+                <h4>Le crocodile reste parfois près de la rivière, immobile et la queuele grande ouverte. Pourquoi?</h4>
+                <div>
+                    <input type="radio" name= "q1" id="attraper" value="a" checked>
+                    <label for="attraper">Pour être prêt à attraper un animal passerait par là</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="inspirer" value="b">
+                    <label for="inspirer">Pour inspirer beaucoup d'air avant d'aller sous l'eau</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="perdre" value="c">
+                    <label for="perdre">Pour perdre de la chaleur</label>
+                </div>
+            </div>
+
+            <div class="questions question-block10">
+                <h4>En moyenne, combien pèse l'oeuf d'une autruche?</h4>
+                <div>
+                    <input type="radio" name= "q2" id="1kg" value="a" checked>
+                    <label for="1kg">1 Kg</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="15kg" value="b">
+                    <label for="15kg">1.5 Kg</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="2kg" value="c">
+                    <label for="2kg">2 Kg</label>
+                </div>
+            </div>
+
+            <div class="questions question-block10">
+                <h4>Un éléphant utilise ses oreilles pour entendre, mais pour qoui d'autre encore?</h4>
+                <div>
+                    <input type="radio" name= "q3" id="rafraichir" value="a" checked>
+                    <label for="rafraichir">Se rafraichir</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="chasser" value="b">
+                    <label for="chasser">Chasser les insectes</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="communiquer" value="c">
+                    <label for="communiquer">Communiquer avec d'autres éléphants</label>
+                </div>
+            </div>
+
+            <div class="questions question-block10">
+                <h4>Quels moustiques peuvent noue empêcher de dormir la nuit?</h4>
+                <div>
+                    <input type="radio" name= "q4" id="femelles" value="a" checked>
+                    <label for="femelles">Uniquement les femelles</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="male" value="b">
+                    <label for="male">Uniquement les mâles</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="femmal" value="c">
+                    <label for="femmal">Tant les femelles que les mâles</label>
+                </div>
+            </div>
+
+            <div class="questions question-block10">
+                <h4>Un chameau peut vivre dans le désert plusieurs jours sans eau. Combien de litres peu-il boire en une fois pour remplir complètement sa reserve d'eau?</h4>
+                <div>
+                    <input type="radio" name= "q5" id="12l" value="a" checked>
+                    <label for="12l">12 litres</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="62l" value="b">
+                    <label for="62l">62 litres</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="180l" value="c">
+                    <label for="180l">180 litres</label>
+                </div>
+            </div>
+
+            <button type="submit" class="button_valider">Validez vos choix</button>
+
+        </form>
+
+        <div class="resultats">
+            
+        </div>
+
+    </div>
+
+                                    <!--  Des question de niveau difficile animaux-->
+
+    <div class="container-global difficile-animaux">
+
+        <div class="header">
+            <button type="reset" class="retour">Retour</button>
+            <h1>Difficile: Animaux</h1>
+        </div>
+
+        <form action="" class="form-quizz">
+
+            <div class="questions question-block11">
+                <h4>Combien d'éspèces animales différentes ont été enregistrées par les scientifiques?</h4>
+                <div>
+                    <input type="radio" name= "q1" id="100a" value="a" checked>
+                    <label for="100a">100 000</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="500a" value="b">
+                    <label for="500a">500 000</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="1500a" value="c">
+                    <label for="1500a">1 500 000</label>
+                </div>
+            </div>
+
+            <div class="questions question-block11">
+                <h4>Comment se fait-il qu'une araignée ne reste pas collée dans sa propre toile?</h4>
+                <div>
+                    <input type="radio" name= "q2" id="substance" value="a" checked>
+                    <label for="substance">Grâce à une substance grasse sur ses pattes</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="collante" value="b">
+                    <label for="collante">Toute la toile n'est pas collante, l'araignée sait où elle peut aller</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="legere" value="c">
+                    <label for="legere">Elle est trop légère pour rester collée</label>
+                </div>
+            </div>
+
+            <div class="questions question-block11">
+                <h4>Les chauve-souris peuvent voler dans l'obscurité en se dirigeant par écholocation, un système qui ressemble au: ?</h4>
+                <div>
+                    <input type="radio" name= "q3" id="bateaux" value="a" checked>
+                    <label for="bateaux">Sonar des bateaux</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="avions" value="b">
+                    <label for="avions">Système de communication utilisé par les avions de chasse à réaction</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="atter" value="c">
+                    <label for="atter">Système d'atterissage des montgolfières</label>
+                </div>
+            </div>
+
+            <div class="questions question-block11">
+                <h4>Le cou de girafe est très long. Combien de vertèbres cervicales comporte-t-il?</h4>
+                <div>
+                    <input type="radio" name= "q4" id="2v" value="a" checked>
+                    <label for="2v">2</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="7v" value="b">
+                    <label for="7v">7</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="25v" value="c">
+                    <label for="25v">25</label>
+                </div>
+            </div>
+
+            <div class="questions question-block11">
+                <h4>Quelle éspèce de tigre est la plus menacée d'extinction?</h4>
+                <div>
+                    <input type="radio" name= "q5" id="bengole" value="a" checked>
+                    <label for="bengole">Le tigre de Bengole</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="siberie" value="b">
+                    <label for="siberie">Le tigre de Sibérie</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="bali" value="c">
+                    <label for="bali">Le tigre du Bali</label>
+                </div>
+            </div>
+
+            <button type="submit" class="button_valider">Validez vos choix</button>
+
+        </form>
+
+        <div class="resultats">
+            
+        </div>
+
+    </div>
+
+                                    <!--  Des question de niveau facile sport-->
+
+    <div class="container-global facile-sport">
+
+        <div class="header">
+            <button type="reset" class="retour">Retour</button>
+            <h1>Facile: Sport</h1>
+        </div>
+
+        <form action="" class="form-quizz">
+
+            <div class="questions question-block12">
+                <h4>Quel est le nom d'un vélo pour deux personnes?</h4>
+                <div>
+                    <input type="radio" name= "q1" id="tandem" value="a" checked>
+                    <label for="tandem">Un tandem</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="veloduo" value="b">
+                    <label for="veloduo">Un véloduo</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="duodem" value="c">
+                    <label for="duodem">Un duodem</label>
+                </div>
+            </div>
+
+            <div class="questions question-block12">
+                <h4>Combien de quilles ya t-il sur la piste de bowling?</h4>
+                <div>
+                    <input type="radio" name= "q2" id="9b" value="a" checked>
+                    <label for="9b">9</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="10b" value="b">
+                    <label for="10b">10</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="11b" value="c">
+                    <label for="11b">11</label>
+                </div>
+            </div>
+
+            <div class="questions question-block12">
+                <h4>Quelle couleur a la ceinture d'un débutant au judo?</h4>
+                <div>
+                    <input type="radio" name= "q3" id="blancj" value="a" checked>
+                    <label for="blancj">Blanc</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="jaunej" value="b">
+                    <label for="jaunej">Jaune</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="noirj" value="c">
+                    <label for="noirj">Noir</label>
+                </div>
+            </div>
+
+            <div class="questions question-block12">
+                <h4>Comment appelle-t-on le sport de lutte japonais où un colosse doit mettre l'autre sur les genous ou le pousser en dehors de la zone réglementaire?</h4>
+                <div>
+                    <input type="radio" name= "q4" id="simo" value="a" checked>
+                    <label for="simo">Le simo</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="samo" value="b">
+                    <label for="samo">Le samo</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="sumo" value="c">
+                    <label for="sumo">Le sumo</label>
+                </div>
+            </div>
+
+            <div class="questions question-block12">
+                <h4>Parmi les distances suivantes, laquelle ne fait pas partie des compétitions de course?</h4>
+                <div>
+                    <input type="radio" name= "q5" id="400mtr" value="a" checked>
+                    <label for="400mtr">400 mètres</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="600mtr" value="b">
+                    <label for="600mtr">600 mètres</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="800mtr" value="c">
+                    <label for="800mtr">800 mètres</label>
+                </div>
+            </div>
+
+            <button type="submit" class="button_valider">Validez vos choix</button>
 
         </form>
 
@@ -817,7 +1504,228 @@
     </div>
 
 
+                            <!--  Des question de niveau moyen sport-->
 
+    <div class="container-global moyen-sport">
+
+        <div class="header">
+            <button type="reset" class="retour">Retour</button>
+            <h1>Moyen: Sport</h1>
+        </div>
+
+        <form action="" class="form-quizz">
+
+            <div class="questions question-block13">
+                <h4>D'où la marque de sport "Nike" tire-t-elle son nom?</h4>
+                <div>
+                    <input type="radio" name= "q1" id="deesse" value="a" checked>
+                    <label for="deesse">Une déesse grecque</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="patron" value="b">
+                    <label for="patron">Le premier parton qui s'appellait Alfered Nike</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="steve" value="c">
+                    <label for="steve">Steve Nike qui fut le premier américain à gagner le 100 mètres</label>
+                </div>
+            </div>
+
+            <div class="questions question-block13">
+                <h4>Quel sport ne fait pas partie du triathlon?</h4>
+                <div>
+                    <input type="radio" name= "q2" id="natation" value="a" checked>
+                    <label for="natation">La natation</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="cyclisme" value="b">
+                    <label for="cyclisme">Le cyclisme</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="lutte" value="c">
+                    <label for="lutte">La lutte</label>
+                </div>
+            </div>
+
+            <div class="questions question-block13">
+                <h4>Le kayak est inspiré de l'embarcation de quel peuple?</h4>
+                <div>
+                    <input type="radio" name= "q3" id="esquimaux" value="a" checked>
+                    <label for="esquimaux">Les Esquimaux</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="papous" value="b">
+                    <label for="papous">Les Papous</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="massais" value="c">
+                    <label for="massais">Les Massaïs</label>
+                </div>
+            </div>
+
+            <div class="questions question-block13">
+                <h4>Les jeux olympiques d'hiver sont organisés tous les 4 ans. Ils ont lieu: ?</h4>
+                <div>
+                    <input type="radio" name= "q4" id="1an" value="a" checked>
+                    <label for="1an">1 an après les jeux d'été</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="2ans" value="b">
+                    <label for="2ans">2 ans après les jeux d'été</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="memeete" value="c">
+                    <label for="memeete">La même année que les jeux d'été</label>
+                </div>
+            </div>
+
+            <div class="questions question-block13">
+                <h4>En tennis de table, le gagnant est celui qui atteint en premier le score de: ?</h4>
+                <div>
+                    <input type="radio" name= "q5" id="21p" value="a" checked>
+                    <label for="21p">21 points</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="40p" value="b">
+                    <label for="40p">40 points</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="45p" value="c">
+                    <label for="45p">45 points</label>
+                </div>
+            </div>
+
+            <button type="submit" class="button_valider">Validez vos choix</button>
+
+        </form>
+
+        <div class="resultats">
+            
+        </div>
+
+    </div>
+
+                            <!--  Des question de niveau difficile sport-->
+
+    <div class="container-global difficile-sport">
+
+        <div class="header">
+            <button type="reset" class="retour">Retour</button>
+            <h1>Difficile: Sport</h1>
+        </div>
+
+        <form action="" class="form-quizz">
+
+            <div class="questions question-block14">
+                <h4>D'où le surf est-il originaire?</h4>
+                <div>
+                    <input type="radio" name= "q1" id="australie" value="a" checked>
+                    <label for="australie">Australie</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="polynesie" value="b">
+                    <label for="polynesie">Polynésie</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q1" id="madagascar" value="c">
+                    <label for="madagascar">Madagascar</label>
+                </div>
+            </div>
+
+            <div class="questions question-block14">
+                <h4>Le sport qui consiste à descendre dans les grottes afin de les explorer?</h4>
+                <div>
+                    <input type="radio" name= "q2" id="geologie" value="a" checked>
+                    <label for="geologie">La géologie</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="archeologie" value="b">
+                    <label for="archeologie">L'archéologie'</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q2" id="speleologie" value="c">
+                    <label for="speleologie">La spéléologie</label>
+                </div>
+            </div>
+
+            <div class="questions question-block14">
+                <h4>Quel élément ne se trouve pas sur une planche à voile?</h4>
+                <div>
+                    <input type="radio" name= "q3" id="gouvernail" value="a" checked>
+                    <label for="gouvernail">Un gouvernail</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="aileron" value="b">
+                    <label for="aileron">Un aileron</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q3" id="derive" value="c">
+                    <label for="derive">Une dérive</label>
+                </div>
+            </div>
+
+            <div class="questions question-block14">
+                <h4>Lorsqu'on saute d'un avion avec un parachute, à quelle vitesse descend-on?</h4>
+                <div>
+                    <input type="radio" name= "q4" id="3km" value="a" checked>
+                    <label for="3km">3 Km/h</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="8km" value="b">
+                    <label for="8km">8 Km/h</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q4" id="15km" value="c">
+                    <label for="15km">15 Km/h</label>
+                </div>
+            </div>
+
+            <div class="questions question-block14">
+                <h4>Le handball est apparu vers la fin du XIXe siècle, Où?</h4>
+                <div>
+                    <input type="radio" name= "q5" id="gb" value="a" checked>
+                    <label for="gb">Grande-Bretagne</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="allemagne14" value="b">
+                    <label for="allemagne14">Allemagne</label>
+                </div>
+
+                <div>
+                    <input type="radio" name= "q5" id="france14" value="c">
+                    <label for="france14">France</label>
+                </div>
+            </div>
+
+            <button type="submit" class="button_valider">Validez vos choix</button>
+
+        </form>
+
+        <div class="resultats">
+            
+        </div>
+
+    </div>
+    </div>
 
 </body>
 </html>
