@@ -14,11 +14,11 @@ body{
 
 .container{
     width: 40vw;
-    height: 70vh;
+    height: 60vh;
     background: linear-gradient(45deg, blue, purple);
     display: grid;
     /* la grid template est pour ranger la grid en petite grid: la premiere partie est pour les colomn et la derniere est pour les row */
-    grid-template: 10vh 40vh 10vh 10vh / repeat(8, 5vw);
+    grid-template: 10vh 40vh 10vh / repeat(8, 5vw);
     margin: 15vh auto 0;
     /* pour placer les elements à l'interieur en absolute */
     position: relative;
@@ -31,7 +31,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.485);
 }
 
 .block_logo_info{
@@ -50,12 +50,13 @@ h1{
     height: auto;
 }
 
+
 .block_info{
     width: 50%;
 }
 
 .block_info .time{
-    font-size: 200%;
+    font-size: 180%;
 }
 
 /* ::first-letter est pour cobler la premiere lettre de notre content */
@@ -64,11 +65,43 @@ h1{
 }
 
 .block_info .temperature{
-    font-size: 250%;
+    font-size: 200%;
 }
 
 .block_info .localisation{
-    font-size: 200%;
+    font-size: 180%;
     /* avec word-wrap: si il ya un mot qui est tres grand ça va passer à la ligne */
     word-wrap: break-word;
 }
+
+.hour_block_prevision{
+    grid-area: 3/ 1 / 4 / 9;
+}
+
+.day_block_prevision{
+    grid-area: 4 / 1 / 5 / 9;
+}
+
+.hour_block_prevision, .day_block_prevision{
+    display: grid;
+    /* 1fr: divise et partage la largeur qu'il ya en unite fractionelle parfaite dans toutes les elements */
+    grid-template: 10vh / repeat(7, 1fr);   
+}
+
+.hour, .day{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid rgba(255, 255, 255, 0.485);
+    font-size: 100%;
+}
+
+.hour:not(:last-child), .day:not(:last-child){
+    border-right: 1px solid rgba(255, 255, 255, 0.485);
+}
+
+.hour p, .day p{
+    margin: 3px;
+}
+

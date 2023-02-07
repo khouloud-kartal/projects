@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- le type module: car on ve utiliser des import et export et pour bien préciser que ça va être des fichiers qui vont utilisés des modules  -->
     <script type="module" src="./script.js" defer></script>
+    <script type="module" src="./time.js" defer></script>
     <title>Wether App</title>
 </head>
 <body>
@@ -17,13 +18,13 @@
         <div class="block_logo_info">
             
             <div class="block_logo">
-                <img src="./images/dark-cloud.svg" alt="the logo of the weather today">
+                <img src="" alt="the logo of the weather today" class="weather_logo">
             </div>
 
             <div class="block_info">
-                <p class="time">Friday</p>
-                <p class="temperature">15 °C</p>
-                <p class="localisation">Marseille</p>
+                <p class="time"></p>
+                <p class="temperature"></p>
+                <p class="localisation"></p>
             </div>
         </div>
 
@@ -64,7 +65,9 @@
                 <p class="hour_value"></p>
             </div>
         </div>
-        <div class="day_block_prevision">
+
+        <!-- la partie est à revoir -->
+        <!-- <div class="day_block_prevision">
 
             <div class="day">
 
@@ -108,7 +111,7 @@
                 <p class="day_temp"></p>
             </div>
         </div>
-    </div>
+    </div> -->
 
 </body>
 </html>
